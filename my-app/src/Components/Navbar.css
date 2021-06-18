@@ -1,0 +1,32 @@
+.foot-header {
+  width: 100% !important;
+  height: 30px;
+  background-color: cornflowerblue;
+}
+.nav-style {
+  background-color: aquamarine !important;
+}
+.search-form {
+  border-color: black !important;
+}
+.search-btn {
+  border-color: black !important;
+  color: black !important;
+  background-color: lightblue !important;
+}
+
+.search-btn:hover {
+  background-color: darkslateblue !important;
+  color: bisque !important;
+}
+.brand-list {
+  background-color: lightseagreen !important;
+}
+.brand-list li a {
+  color: black !important;
+  font-weight: 500;
+  padding: 0 50px;
+}
+.App {
+  margin-bottom: 30px;
+}
