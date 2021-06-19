@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Mobile Shop</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="nav navbar-nav navbar-right" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Shopping Cart</a>
+        </li>        
+        {{#if login}}
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/user/profile"><i class="fa fa-user " aria-hidden="true"></i>Profile</a>          
+        </li>     
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/user/logout"><i class="fa fa-sign-out " aria-hidden="true"></i>Logout</a>          
+        </li>     
+        {{else}}   
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/user/signin"><i class="fa fa-sign-in" aria-hidden="true"></i>Signin</a>
+        </li>                
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/user/signup"><i class="fa fa-registered " aria-hidden="true"></i>Signup</a>
+        </li>        
+        {{/if}}
+        
+        
+      </ul>
+
+    </div>
+  </div>
+</nav>
